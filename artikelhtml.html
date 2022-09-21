@@ -1,0 +1,1728 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Materi HTML</title>
+
+    <style type="text/css">
+        .kode {
+            background: #f8f8f8; 
+            overflow:auto;
+            width:auto;
+            border:solid gray;
+            border-width:.1em .1em .1em .8em;
+            padding:.2em .6em;
+        }
+
+        .kode_pre {
+            margin: 0; 
+            line-height: 125%;
+            font-size: 15px;
+        }
+
+        .gambar_materi {
+            overflow:auto;
+            text-align: center;
+        }
+
+        .gambar_materi_size {
+            max-width: 780px; 
+            max-height: 450px;
+        }
+        
+        .penulis {
+            text-align: left;
+            overflow: hidden;
+        }
+
+        .foto_profile {
+            width: 100px;
+            border-radius: 50%;
+            float: left;
+            margin-right: 10px;
+        }
+
+        h1 {
+            line-height: 40px;
+            font-size: 58px;
+            font-family: sohne, "Helvetica Neue", Helvetica, Arial, sans-serif;
+            font-weight: 900;
+            letter-spacing: 1px;
+        }
+        
+        h2 {
+            color: #bcb91a;
+            line-height: 40px;
+            font-size: 32px;
+            font-family: sohne, "Helvetica Neue", Helvetica, Arial, sans-serif;
+            font-weight: 800;
+        }
+
+        h3 {
+            font-style: normal;
+            line-height: 40px;
+            font-size: 28px;
+            font-family: sohne, "Helvetica Neue", Helvetica, Arial, sans-serif;
+            font-weight: 600;
+        }
+
+        h4 {
+            font-style: normal;
+            line-height: 32px;
+            font-size: 20px;
+            font-family: sohne, "Helvetica Neue", Helvetica, Arial, sans-serif;
+            font-weight: 600;
+            
+        }
+
+        p {
+            font-style: normal;
+            font-size: 18px;
+            font-family: source-serif-pro, Georgia, Cambria, "Times New Roman", Times, serif;
+            line-height: 32px;
+            letter-spacing: -0.003em;
+        }
+
+        .penulis p {
+            font-style: normal;
+            font-size: 15px;
+            font-family: sohne, "Helvetica Neue", Helvetica, Arial, sans-serif;
+            line-height: 20px;
+        }
+
+        .penulis span {
+            font-weight: 800;
+        }
+
+        nav h2 {
+            line-height: 28px;
+            font-size: 20px;
+            font-family: sohne, "Helvetica Neue", Helvetica, Arial, sans-serif;
+            font-weight: 800;
+        }
+
+        nav li {
+            font-style: normal;
+            font-size: 15px;
+            font-family: source-serif-pro, Georgia, Cambria, "Times New Roman", Times, serif;
+            line-height: 30px;
+            letter-spacing: -0.003em;
+        }
+
+        header {
+            padding: 20px; 
+            background-color: #bcb91a;
+            color: #ffffff; 
+            margin: 0px -10px; 
+            margin-top: -10px; 
+            margin-bottom: 50px; 
+            box-shadow: 0px 0px 3px rgba(210, 210, 210, 0.8);
+            text-align: center;
+        }
+
+        nav {
+            float: left;
+            line-height: 150%; 
+            padding: 20px;
+            width: 130px;
+            margin-left: 25px;
+            background-color: #ffffff;            
+            box-shadow: 0px 0px 3px rgba(210, 210, 210, 0.8); 
+            border-radius: 8px;
+        }
+
+        article {
+            line-height: 150%; 
+            padding: 50px; 
+            text-align: left; 
+            max-width: 800px; 
+            margin-left: 215px;  
+            background-color: #ffffff; 
+            box-shadow: 0px 0px 3px rgba(210, 210, 210, 0.8); 
+            border-radius: 8px;
+        }
+
+        footer {
+            padding: 20px; 
+            background-color: #1f283a; 
+            color: #ffffff; 
+            margin: 0px -10px; 
+            margin-top: 50px;
+            margin-bottom: -10px;  
+            box-shadow: 0px 0px 10px rgba(210, 210, 210, 0.8);
+            text-align: center;
+        }
+
+        footer p {
+            font-style: normal;
+            font-size: 15px;
+            font-family: sohne, "Helvetica Neue", Helvetica, Arial, sans-serif;
+            line-height: 20px;
+        }
+        
+        @media screen and (min-width: 1828px) {
+            article {
+                margin: 0 auto;
+            }
+
+            nav {
+                margin-left: 15%;
+            }   
+        }
+    </style>
+</head>
+
+<body style="background-color:#f8fafc">
+    <header>
+        <div class="penulis">
+            <img class="foto_profile" src="https://github.com/rai-pramana/int_gram/blob/main/bb2ca9f84fdc9df48fbd2d924fa3a01b.jpg?raw=true" alt="Foto Penulis">
+            <p>
+                <span>Penulis:</span>
+                <br>Nama: I Kadek Rai Pramana
+                <br>NIM: 2105551094
+                <br>Kelas: Pemrograman Internet (E)
+            </p>
+        </div>
+    
+        <h1 style="text-align: center;">Materi HTML</h1>
+    </header>
+
+    <nav>
+        <h2>Daftar Isi:</h2>
+        <ol type="I">
+            <a href="#pendahuluan"><li>Pendahuluan</li></a>
+            <a href="#materi_heading"><li>Pembuatan Heading</li></a>
+            <a href="#materi_paragraf"><li>Pembuatan Paragraf</li></a>
+            <a href="#materi_format_teks"><li>Pemformatan Teks</li></a>
+            <a href="#materi_list"><li>Pembuatan List</li></a>
+            <a href="#materi_gambar"><li>Penambahan Gambar</li></a>
+            <a href="#materi_link"><li>Penambahan Hyperlink</li></a>
+            <a href="#materi_tabel"><li>Pembuatan Tabel</li></a>
+            <a href="#materi_form"><li>Pembuatan Form</li></a>
+            <a href="#daftar_pustaka"><li>Daftar Pustaka</li></a>
+        </ol>
+    </nav>
+
+    <article>
+        <!--Materi Pendahuluan-->
+        <h2 id="pendahuluan">Pendahuluan HTML</h2>
+        <p>
+            <b>HTML</b> merupakan bahasa pemrograman yang menggunakan penanda (<i>markup</i>) untuk membuat dan mendeskripsikan struktur dari suatu halaman web. 
+        </p>
+        <p>
+            Penanda dalam dokumen HTML disebut sebagai <b><i>tag</i></b>. <i>Tag</i> HTML selalu berpasangan (<i>tag</i> pembuka dan <i>tag</i> penutup), 
+            namun ada beberapa <i>tag</i> yang tidak memiliki <i>tag</i> penutup, yaitu <i>tag</i> <code>&lt;br&gt;</code>, <code>&lt;hr&gt;</code>, <code>&lt;img&gt;</code>, dll. 
+            <br>Penulisan <i>tag</i> penutup ditambahkan tanda garis miring (<code>/</code>) di depan nama <i>tag</i> tersebut. Contohnya yaitu sebagai berikut.
+        </p>
+
+<!--Awal Kode Program-->
+<div class="kode">
+<pre class="kode_pre">
+<span style="color: #008000; font-weight: bold">&lt;p&gt;&lt;/p&gt;</span>
+</pre>
+</div>
+<!--Akhir Kode Program-->
+
+        <br>
+
+        <p>
+            Komponen penyusun dokumen HTML yang diapit oleh <i>tag</i> disebut sebagai <b>elemen</b>. Elemen dapat berisi elemen lainnya (<i>nested element</i>). Contohnya yaitu sebagai berikut.
+        </p>
+
+<!--Awal Kode Program-->
+<div class="kode">
+<pre class="kode_pre">
+<span style="color: #008000; font-weight: bold">&lt;p</span><span style="color: #7D9029"> align=</span><span style="color: #BA2121">&quot;left&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>Halo<span style="color: #008000; font-weight: bold">&lt;/p&gt;</span>
+</pre>
+</div>
+<!--Akhir Kode Program-->
+
+        <br>
+
+        <p>
+            Pengubah (<i>modifier</i>) perilaku dari suatu elemen dalam dokumen HTML disebut sebagai <b>atribut</b>. Atribut biasanya terdapat pada <i>tag</i> pembuka. 
+            Pada contoh sebelumnya, atribut <code>align</code> merupakan atribut yang digunakan untuk mengatur perataan teks.
+        </p>
+
+        <br>
+
+        <h3>Peralatan untuk Menggunakan HTML</h3>
+        <ol type="a">
+            <h4><li>Teks Editor</li></h4>
+                <p>
+                    Teks editor digunakan untuk membuat dan menulis dokumen HTML. Contohnya yaitu Visual Studio Code, Notepad, Notepad++, Sublime Text, dll.
+                </p>
+            
+            <h4><li>Web Browser</li></h4>
+                <p>
+                    Web browser digunakan untuk menampilkan (<i>render</i>) dokumen HTML. Contohnya yaitu Google Chrome, Firefox, Microsoft Edge, dll.
+                </p>
+                <div class="gambar_materi">
+                    <img class="gambar_materi_size" src="https://github.com/rai-pramana/int_gram/blob/main/browsers-1273344_1920.png?raw=true" alt="Gambar Browser">
+                </div>
+        </ol>
+
+        <br>
+
+        <h3>Struktur Dasar HTML</h3>
+
+<!--Awal Kode Program-->
+<div class="kode">
+<pre class="kode_pre">
+<span style="color: #BC7A00">&lt;!DOCTYPE html&gt;</span>
+<span style="color: #008000; font-weight: bold">&lt;html</span> <span style="color: #7D9029">lang=</span><span style="color: #BA2121">&quot;en&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+<span style="color: #008000; font-weight: bold">&lt;head&gt;</span>
+    <span style="color: #008000; font-weight: bold">&lt;title&gt;</span>Judul Web<span style="color: #008000; font-weight: bold">&lt;/title&gt;</span>
+<span style="color: #008000; font-weight: bold">&lt;/head&gt;</span>
+<span style="color: #008000; font-weight: bold">&lt;body&gt;</span>
+    <span style="color: #408080; font-style: italic">&lt;!--Komentar--&gt;</span>
+<span style="color: #008000; font-weight: bold">&lt;/body&gt;</span>
+<span style="color: #008000; font-weight: bold">&lt;/html&gt;</span>
+</pre>
+</div>
+<!--Akhir Kode Program-->
+
+        <ol type="a">
+            <h4><li>Bagian Deklarasi</li></h4>
+                <p>
+                    Bagian deklarasi ditandai dengan <i>tag</i> <code>&lt;!DOCTYPE html&gt;</code> yang menyatakan bahwa dokumen ini bertipe HTML dan versinya adalah HTML 5.
+                    <br>Selanjutnya, <i>tag</i> pembuka HTML <code>&lt;html&gt;</code> yang digunakan untuk membungkus <i>tag</i> <code>&lt;head&gt;</code> dan <i>tag</i> <code>&lt;body&gt;</code>, 
+                    serta <i>tag</i> HTML lainnya, lalu diakhiri dengan <i>tag</i> penutupnya yaitu <code>&lt;/html&gt;</code>.
+                    <br>Atribut <code>lang="en</code> menyatakan bahwa dokumen HTML menggunakan bahasa Inggris.
+                </p>
+            <h4><li>Bagian Head</li></h4>
+                <p>
+                    Bagian <i>head</i> biasanya digunakan untuk menuliskan <i>tag</i> <code>&lt;title&gt;</code> untuk judul halaman web, serta untuk menuliskan kode CSS dan Javascript.
+                </p>
+            <h4><li>Bagian Body</li></h4>
+                <p>
+                    Bagian <i>body</i> merupakan bagian isi/konten dari dokumen HTML yang akan ditampilkan pada halaman web pada browser. 
+                    Bagian ini dapat disisipi dengan berbagai macam <i>tag</i> yang digunakan untuk menuliskan konten (teks, gambar, video, dan <i>link</i>) pada dokumen HTML.
+                </p>
+            <h4><li>Komentar</li></h4>
+                <p>
+                    Komentar merupakan bagian dari dokumen HTML yang tidak akan ditampilkan pada halaman web, yang digunakan untuk menambahkan penjelasan terkait dokumen HTML yang dibuat. 
+                    Penulisan komentar menggunakan <i>tag</i> <code>&lt;!-- komentar --&gt;</code>.
+                </p>
+        </ol>
+
+        <hr style="margin-top: 50px; margin-bottom:65px">
+
+        <!--Materi Pembuatan Heading-->
+        <h2 id="materi_heading">Pembuatan Heading</h2>
+        <p>
+            <b><i>Heading</i></b> merupakan judul yang ditambahkan pada artikel atau halaman web. Pembuatan judul pada dokumen HTML menggunakan <i>tag</i> <code>&lt;h1&gt;</code> 
+            (judul level pertama yang berukuran paling besar) hingga <code>&lt;h6&gt;</code> (sub judul yang berukuran paling kecil). 
+        </p>
+
+<!--Awal Kode Program-->
+<div class="kode">
+<pre class="kode_pre">
+<span style="color: #008000; font-weight: bold">&lt;h1&gt;</span>Heading 1<span style="color: #008000; font-weight: bold">&lt;/h1&gt;</span>
+<span style="color: #008000; font-weight: bold">&lt;h2&gt;</span>Heading 2<span style="color: #008000; font-weight: bold">&lt;/h2&gt;</span>
+<span style="color: #008000; font-weight: bold">&lt;h3&gt;</span>Heading 3<span style="color: #008000; font-weight: bold">&lt;/h3&gt;</span>
+<span style="color: #008000; font-weight: bold">&lt;h4&gt;</span>Heading 4<span style="color: #008000; font-weight: bold">&lt;/h4&gt;</span>
+<span style="color: #008000; font-weight: bold">&lt;h5&gt;</span>Heading 5<span style="color: #008000; font-weight: bold">&lt;/h5&gt;</span>
+<span style="color: #008000; font-weight: bold">&lt;h6&gt;</span>Heading 6<span style="color: #008000; font-weight: bold">&lt;/h6&gt;</span>    
+</pre>
+</div>
+<!--Akhir Kode Program-->
+
+        <p>
+            Tampilan pada halaman web browser.
+        </p>
+
+        <div class="gambar_materi">
+            <img class="gambar_materi_size" src="https://github.com/rai-pramana/int_gram/blob/main/heading.png?raw=true" alt="Gambar Halaman Web">
+        </div>        
+
+        <hr style="margin-top: 50px; margin-bottom:65px">
+
+        <!--Materi Pembuatan Paragraf-->
+        <h2 id="materi_paragraf">Pembuatan Paragraf</h2>
+        <p>
+            <b>Paragraf</b> merupakan kumpulan dari beberapa kalimat yang padu (saling berkaitan sesuai konteks). 
+        </p>
+        <p>
+            Pembuatan <b>paragraf</b> pada dokumen HTML menggunakan <i>tag</i> <code>&lt;p&gt;</code>. 
+        </p>
+
+<!--Awal Kode Program-->
+<div class="kode">
+<pre class="kode_pre">
+<span style="color: #008000; font-weight: bold">&lt;p&gt;</span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis quae provident illum inventore, possimus fuga fugit? Dolorem hic quaerat quam illo dicta dolor exercitationem eum fugiat fuga repellendus. Maiores, nihil.<span style="color: #008000; font-weight: bold">&lt;/p&gt;</span>
+</pre>
+</div>
+<!--Akhir Kode Program-->
+
+        <p>
+            Tampilan pada halaman web browser.
+        </p>
+
+        <div class="gambar_materi">
+            <img class="gambar_materi_size" src="https://github.com/rai-pramana/int_gram/blob/main/p.png?raw=true" alt="Gambar Halaman Web">
+        </div>
+
+        <br>
+
+        <p>
+            Pembuatan <b>baris baru</b> menggunakan <i>tag</i> <code>&lt;br&gt;</code>. 
+        </p>
+
+<!--Awal Kode Program-->
+<div class="kode">
+<pre class="kode_pre">
+<span style="color: #008000; font-weight: bold">&lt;p&gt;</span>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+    <span style="color: #008000; font-weight: bold">&lt;br&gt;</span>Veritatis quae provident illum inventore, possimus fuga fugit? 
+    <span style="color: #008000; font-weight: bold">&lt;br&gt;</span>Dolorem hic quaerat quam illo dicta dolor exercitationem eum fugiat fuga repellendus. 
+    <span style="color: #008000; font-weight: bold">&lt;br&gt;</span>Maiores, nihil.
+<span style="color: #008000; font-weight: bold">&lt;/p&gt;</span>
+</pre>
+</div>
+<!--Akhir Kode Program-->
+
+        <p>
+            Tampilan pada halaman web browser.
+        </p>
+
+        <div class="gambar_materi">
+            <img class="gambar_materi_size" src="https://github.com/rai-pramana/int_gram/blob/main/br.png?raw=true" alt="Gambar Halaman Web">
+        </div>
+
+        <br>
+
+        <p>
+            Pembuatan <b>garis horizontal</b> menggunakan <i>tag</i> <code>&lt;hr&gt;</code>. 
+        </p>
+
+<!--Awal Kode Program-->
+<div class="kode">
+<pre class="kode_pre">
+<span style="color: #008000; font-weight: bold">&lt;p&gt;</span>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+    <span style="color: #008000; font-weight: bold">&lt;br&gt;</span>Veritatis quae provident illum inventore, possimus fuga fugit? 
+    <span style="color: #008000; font-weight: bold">&lt;br&gt;</span>Dolorem hic quaerat quam illo dicta dolor exercitationem eum fugiat fuga repellendus. 
+    <span style="color: #008000; font-weight: bold">&lt;br&gt;</span>Maiores, nihil.
+<span style="color: #008000; font-weight: bold">&lt;/p&gt;</span>
+<span style="color: #008000; font-weight: bold">&lt;hr&gt;</span>
+</pre>
+</div>
+<!--Akhir Kode Program-->
+
+        <p>
+            Tampilan pada halaman web browser.
+        </p>
+
+        <div class="gambar_materi">
+            <img class="gambar_materi_size" src="https://github.com/rai-pramana/int_gram/blob/main/hr.png?raw=true" alt="Gambar Halaman Web">
+        </div>
+    
+        <hr style="margin-top: 50px; margin-bottom:65px">
+
+        <!--Materi Pemformatan Teks-->
+        <h2 id="materi_format_teks">Pemformatan Teks</h2>
+        <p>
+            <b>Pemformatan teks</b> bertujuan agar suatu teks menjadi lebih mudah dibaca karena terdapat penegasan, seperti teks tebal, miring, garis bawah, tercoret, pemangkatan, pewarnaan, dll.            
+        </p>
+        <p>
+            <i>Tag</i> <code>&lt;font&gt;</code> merupakan <i>tag</i> yang memiliki berbagai atribut untuk memformat teks, yaitu sebagai berikut. 
+            <ul>
+                <li>
+                    <p>
+                        <code>&lt;font color=”value”&gt;</code> untuk mewarnai teks. <i>Value</i> yang dapat dimasukkan yaitu nama warna atau bilangan heksadesimal (<code>#000000</code> hingga <code>#ffffff</code>).
+                    </p>
+
+<!--Awal Kode Program-->
+<div class="kode">
+<pre class="kode_pre">
+<span style="color: #008000; font-weight: bold">&lt;font</span> <span style="color: #7D9029">color=</span><span style="color: #BA2121">&quot;#8400ff&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>Lorem ipsum dolor sit amet consectetur adipisicing elit.<span style="color: #008000; font-weight: bold">&lt;/font&gt;</span>
+<span style="color: #008000; font-weight: bold">&lt;br&gt;</span>
+<span style="color: #008000; font-weight: bold">&lt;font</span> <span style="color: #7D9029">color=</span><span style="color: #BA2121">&quot;red&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>Lorem ipsum dolor sit amet consectetur adipisicing elit.<span style="color: #008000; font-weight: bold">&lt;/font&gt;</span>
+</pre>
+</div>
+<!--Akhir Kode Program-->
+
+                    <p>
+                        Tampilan pada halaman web browser.
+                    </p>
+
+                    <div class="gambar_materi">
+                        <img class="gambar_materi_size" src="https://github.com/rai-pramana/int_gram/blob/main/font%20color.png?raw=true" alt="Gambar Halaman Web">
+                    </div>
+
+                    <br>
+
+                </li>
+                <li>
+                    <p>
+                        <code>&lt;font size=value&gt;</code> untuk menentukan ukuran <i>font</i>. <i>Value</i> yang dapat dimasukkan yaitu bilangan dari <code>1</code> hingga <code>7</code>.
+                    </p>
+
+<!--Awal Kode Program-->
+<div class="kode">
+<pre class="kode_pre">
+<span style="color: #008000; font-weight: bold">&lt;font</span> <span style="color: #7D9029">size=</span><span style="color: #BA2121">&quot;1&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>Lorem ipsum dolor sit amet consectetur adipisicing elit.<span style="color: #008000; font-weight: bold">&lt;/font&gt;</span>
+<span style="color: #008000; font-weight: bold">&lt;br&gt;</span>
+<span style="color: #008000; font-weight: bold">&lt;font</span> <span style="color: #7D9029">size=</span><span style="color: #BA2121">&quot;2&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>Lorem ipsum dolor sit amet consectetur adipisicing elit.<span style="color: #008000; font-weight: bold">&lt;/font&gt;</span>
+<span style="color: #008000; font-weight: bold">&lt;br&gt;</span>
+<span style="color: #008000; font-weight: bold">&lt;font</span> <span style="color: #7D9029">size=</span><span style="color: #BA2121">&quot;3&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>Lorem ipsum dolor sit amet consectetur adipisicing elit.<span style="color: #008000; font-weight: bold">&lt;/font&gt;</span>
+<span style="color: #008000; font-weight: bold">&lt;br&gt;</span>
+<span style="color: #008000; font-weight: bold">&lt;font</span> <span style="color: #7D9029">size=</span><span style="color: #BA2121">&quot;4&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>Lorem ipsum dolor sit amet consectetur adipisicing elit.<span style="color: #008000; font-weight: bold">&lt;/font&gt;</span>
+<span style="color: #008000; font-weight: bold">&lt;br&gt;</span>
+<span style="color: #008000; font-weight: bold">&lt;font</span> <span style="color: #7D9029">size=</span><span style="color: #BA2121">&quot;5&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>Lorem ipsum dolor sit amet consectetur adipisicing elit.<span style="color: #008000; font-weight: bold">&lt;/font&gt;</span>
+<span style="color: #008000; font-weight: bold">&lt;br&gt;</span>
+<span style="color: #008000; font-weight: bold">&lt;font</span> <span style="color: #7D9029">size=</span><span style="color: #BA2121">&quot;6&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>Lorem ipsum dolor sit amet consectetur adipisicing elit.<span style="color: #008000; font-weight: bold">&lt;/font&gt;</span>
+<span style="color: #008000; font-weight: bold">&lt;br&gt;</span>
+<span style="color: #008000; font-weight: bold">&lt;font</span> <span style="color: #7D9029">size=</span><span style="color: #BA2121">&quot;7&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>Lorem ipsum dolor sit amet consectetur adipisicing elit.<span style="color: #008000; font-weight: bold">&lt;/font&gt;</span>
+</pre>
+</div>
+<!--Akhir Kode Program-->
+    
+                    <p>
+                        Tampilan pada halaman web browser.
+                    </p>
+
+                    <div class="gambar_materi">
+                        <img class="gambar_materi_size" src="https://github.com/rai-pramana/int_gram/blob/main/font%20size.png?raw=true" alt="Gambar Halaman Web">
+                    </div>
+
+                    <br>
+    
+                </li>
+                <li>
+                    <p>
+                        <code>&lt;font face=”value”&gt;</code> untuk menentukan jenis <i>font</i>. 
+                    </p>
+
+<!--Awal Kode Program-->
+<div class="kode">
+<pre class="kode_pre">
+<span style="color: #008000; font-weight: bold">&lt;font</span> <span style="color: #7D9029">face=</span><span style="color: #BA2121">&quot;Arial&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>Lorem ipsum dolor sit amet consectetur adipisicing elit.<span style="color: #008000; font-weight: bold">&lt;/font&gt;</span>
+<span style="color: #008000; font-weight: bold">&lt;br&gt;</span>
+<span style="color: #008000; font-weight: bold">&lt;font</span> <span style="color: #7D9029">face=</span><span style="color: #BA2121">&quot;Courier New&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>Lorem ipsum dolor sit amet consectetur adipisicing elit.<span style="color: #008000; font-weight: bold">&lt;/font&gt;</span>
+</pre>
+</div>
+<!--Akhir Kode Program-->
+
+                    <p>
+                        Tampilan pada halaman web browser.
+                    </p>
+
+                    <div class="gambar_materi">
+                        <img class="gambar_materi_size" src="https://github.com/rai-pramana/int_gram/blob/main/font%20face.png?raw=true" alt="Gambar Halaman Web">
+                    </div>
+
+                    <br>    
+                </li>
+            </ul>
+        </p>
+
+        <p>
+            Pembuatan <b>teks tebal</b> pada dokumen HTML menggunakan <i>tag</i> <code>&lt;b&gt;</code> (<i>bold</i>) atau <code>&lt;strong&gt;</code>. 
+            <i>tag</i> <code>&lt;strong&gt;</code> digunakan untuk menandai bagian teks penting dalam halaman web sehingga mengoptimalkan SEO.    
+        </p>
+
+<!--Awal Kode Program-->
+<div class="kode">
+<pre class="kode_pre">
+Lorem ipsum <span style="color: #008000; font-weight: bold">&lt;b&gt;</span>dolor<span style="color: #008000; font-weight: bold">&lt;/b&gt;</span> sit amet consectetur adipisicing elit. Enim maiores porro, <span style="color: #008000; font-weight: bold">&lt;strong&gt;</span>incidunt<span style="color: #008000; font-weight: bold">&lt;/strong&gt;</span> cum magni vel fugit odit earum cumque!
+</pre>
+</div>
+<!--Akhir Kode Program-->
+
+        <p>
+            Tampilan pada halaman web browser.
+        </p>
+
+        <div class="gambar_materi">
+            <img class="gambar_materi_size" src="https://github.com/rai-pramana/int_gram/blob/main/b.png?raw=true" alt="Gambar Halaman Web">
+        </div>
+
+        <br>
+
+        <p>
+            Pembuatan <b>teks miring</b> pada dokumen HTML menggunakan <i>tag</i> <code>&lt;i&gt;</code> (<i>italic</i>) atau <code>&lt;em&gt;</code> (<i>emphasis</i>).
+        </p>
+
+<!--Awal Kode Program-->
+<div class="kode">
+<pre class="kode_pre">
+Lorem ipsum <span style="color: #008000; font-weight: bold">&lt;i&gt;</span>dolor<span style="color: #008000; font-weight: bold">&lt;/i&gt;</span> sit amet consectetur adipisicing elit. Enim maiores porro, <span style="color: #008000; font-weight: bold">&lt;em&gt;</span>incidunt<span style="color: #008000; font-weight: bold">&lt;/em&gt;</span> cum magni vel fugit odit earum cumque!
+</pre>
+</div>
+<!--Akhir Kode Program-->
+
+        <p>
+            Tampilan pada halaman web browser.
+        </p>
+
+        <div class="gambar_materi">
+            <img class="gambar_materi_size" src="https://github.com/rai-pramana/int_gram/blob/main/i.png?raw=true" alt="Gambar Halaman Web">
+        </div>
+
+        <br>
+    
+        <p>
+            Pembuatan <b>teks garis bawah</b> pada dokumen HTML menggunakan <i>tag</i> <code>&lt;u&gt;</code> (<i>underline</i>) atau <code>&lt;ins&gt;</code> (<i>insert</i>).
+        </p>
+
+<!--Awal Kode Program-->
+<div class="kode">
+<pre class="kode_pre">
+Lorem ipsum <span style="color: #008000; font-weight: bold">&lt;u&gt;</span>dolor<span style="color: #008000; font-weight: bold">&lt;/u&gt;</span> sit amet consectetur adipisicing elit. Enim maiores porro, <span style="color: #008000; font-weight: bold">&lt;ins&gt;</span>incidunt<span style="color: #008000; font-weight: bold">&lt;/ins&gt;</span> cum magni vel fugit odit earum cumque!
+</pre>
+</div>
+<!--Akhir Kode Program-->
+
+        <p>
+            Tampilan pada halaman web browser.
+        </p>
+
+        <div class="gambar_materi">
+            <img class="gambar_materi_size" src="https://github.com/rai-pramana/int_gram/blob/main/u.png?raw=true" alt="Gambar Halaman Web">
+        </div>
+
+        <br>
+
+        <p>
+            Pembuatan <b>teks tercoret</b> pada dokumen HTML menggunakan <i>tag</i> <code>&lt;s&gt;</code> (<i>strikethrough</i>) atau <code>&lt;del&gt;</code> (<i>delete</i>).
+        </p>
+
+<!--Awal Kode Program-->
+<div class="kode">
+<pre class="kode_pre">
+Lorem ipsum <span style="color: #008000; font-weight: bold">&lt;s&gt;</span>dolor<span style="color: #008000; font-weight: bold">&lt;/s&gt;</span> sit amet consectetur adipisicing elit. Enim maiores porro, <span style="color: #008000; font-weight: bold">&lt;del&gt;</span>incidunt<span style="color: #008000; font-weight: bold">&lt;/del&gt;</span> cum magni vel fugit odit earum cumque!
+</pre>
+</div>
+<!--Akhir Kode Program-->
+
+        <p>
+            Tampilan pada halaman web browser.
+        </p>
+
+        <div class="gambar_materi">
+            <img class="gambar_materi_size" src="https://github.com/rai-pramana/int_gram/blob/main/s.png?raw=true" alt="Gambar Halaman Web">
+        </div>
+
+        <br>
+
+        <p>
+            Pembuatan <b>teks pemangkatan</b> pada dokumen HTML menggunakan <i>tag</i> <code>&lt;sup&gt;</code> (<i>superscript</i>) untuk pangkat di atas, 
+            serta <i>tag</i> <code>&lt;sub&gt;</code> (<i>subscript</i>) untuk pangkat di bawah.
+        </p>
+
+<!--Awal Kode Program-->
+<div class="kode">
+<pre class="kode_pre">
+O<span style="color: #008000; font-weight: bold">&lt;sub&gt;</span>2<span style="color: #008000; font-weight: bold">&lt;/sub&gt;</span> dan 2<span style="color: #008000; font-weight: bold">&lt;sup&gt;</span>2<span style="color: #008000; font-weight: bold">&lt;/sup&gt;</span>
+</pre>
+</div>
+<!--Akhir Kode Program-->
+
+        <p>
+            Tampilan pada halaman web browser.
+        </p>
+
+        <div class="gambar_materi">
+            <img class="gambar_materi_size" src="https://github.com/rai-pramana/int_gram/blob/main/sup%20sub.png?raw=true" alt="Gambar Halaman Web">
+        </div>
+
+        <br>
+
+        <p>
+            Pembuatan <b>penanda (<i>marker</i>) teks </b> pada dokumen HTML menggunakan <i>tag</i> <code>&lt;mark&gt;</code>. 
+            Warna bawaan dari <i>marker</i> adalah kuning, dan dapat diganti menggunakan <i>tag</i> <code>&lt;style&gt;</code> CSS.
+        </p>
+
+<!--Awal Kode Program-->
+<div class="kode">
+<pre class="kode_pre">
+Lorem ipsum <span style="color: #008000; font-weight: bold">&lt;mark&gt;</span>dolor<span style="color: #008000; font-weight: bold">&lt;/mark&gt;</span> sit amet consectetur adipisicing elit. Enim maiores porro, <span style="color: #008000; font-weight: bold">&lt;mark</span> <span style="color: #7D9029">style=</span><span style="color: #BA2121">&quot;background-color: red;&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>incidunt<span style="color: #008000; font-weight: bold">&lt;/mark&gt;</span> cum magni vel fugit odit earum cumque!
+</pre>
+</div>
+<!--Akhir Kode Program-->
+
+        <p>
+            Tampilan pada halaman web browser.
+        </p>
+
+        <div class="gambar_materi">
+            <img class="gambar_materi_size" src="https://github.com/rai-pramana/int_gram/blob/main/mark.png?raw=true" alt="Gambar Halaman Web">
+        </div>
+
+        <br>
+
+        <p>
+            <i>Tag</i> <code>&lt;code&gt;</code> digunakan untuk menandai teks yang termasuk <b>kode suatu program</b>.
+        </p>
+
+<!--Awal Kode Program-->
+<div class="kode">
+<pre class="kode_pre">
+<span style="color: #008000; font-weight: bold">&lt;code&gt;</span>int bilangan;<span style="color: #008000; font-weight: bold">&lt;/code&gt;</span>
+</pre>
+</div>
+<!--Akhir Kode Program-->
+
+        <p>
+            Tampilan pada halaman web browser.
+        </p>
+
+        <div class="gambar_materi">
+            <img class="gambar_materi_size" src="https://github.com/rai-pramana/int_gram/blob/main/code.png?raw=true" alt="Gambar Halaman Web">
+        </div>
+
+        <br>
+
+        <p>
+            <i>Tag</i> <code>&lt;pre&gt;</code> digunakan untuk menampilkan teks pada halaman web sesuai dengan format yang ditentukan/dituliskan pada dokumen HTML.
+        </p>
+
+<!--Awal Kode Program-->
+<div class="kode">
+<pre class="kode_pre">
+<span style="color: #008000; font-weight: bold">&lt;pre&gt;</span>
+Lorem ipsum dolor sit amet consectetur 
+adipisicing elit. Suscipit repudiandae 
+            numquam corporis hic expedita architecto, 
+            eligendi ea! Accusantium exercitationem 
+natus asperiores, provident maxime 
+architecto quae sequi ad, illum saepe aliquam!
+<span style="color: #008000; font-weight: bold">&lt;/pre&gt;</span>
+</pre>
+</div>
+<!--Akhir Kode Program-->
+
+        <p>
+            Tampilan pada halaman web browser.
+        </p>
+
+        <div class="gambar_materi">
+            <img class="gambar_materi_size" src="https://github.com/rai-pramana/int_gram/blob/main/pre.png?raw=true" alt="Gambar Halaman Web">
+        </div>
+        
+        <hr style="margin-top: 50px; margin-bottom:65px">
+
+        <!--Materi Pembuatan List-->
+        <h2 id="materi_list">Pembuatan List</h2>
+        <p>
+            <b><i>List</i></b> merupakan format yang digunakan untuk merepresentasikan suatu daftar. Terdapat tiga jenis <i>list</i> pada HTML, yaitu sebagai berikut.
+            <ol type="a">
+                <h3><li>Unordered List</li></h3>
+                    <p>
+                        <b><i>Unordered list</i></b> merupakan daftar yang tidak mengutamakan urutan dari setiap itemnya. <i>Tag</i> yang digunakan untuk membuat unordered list adalah <i>tag</i> <code>&lt;ul&gt;</code>, 
+                        serta <i>tag</i> <code>&lt;li&gt;</code> (<i>list</i> item) untuk menyatakan daftar itemnya.  
+                    </p>
+                    <p>
+                        Atribut <code>type</code> digunakan untuk mengganti simbol <i>unordered list</i>, dengan nilai sebagai berikut.
+                        <ul>
+                            <li>
+                                <code>square</code> untuk simbol persegi.
+                            </li>
+                            <li>
+                                <code>disc</code> (<i>default</i>) untuk simbol piringan.
+                            </li>
+                            <li>
+                                <code>none</code> tidak memakai simbol.
+                            </li>
+                            <li>
+                                <code>circle</code> untuk simbol lingkaran.
+                            </li>
+                        </ul>
+                    </p>
+
+<!--Awal Kode Program-->
+<div class="kode">
+<pre class="kode_pre">
+List Barang:
+<span style="color: #008000; font-weight: bold">&lt;ul</span> <span style="color: #7D9029">type=</span><span style="color: #BA2121">&quot;square&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+    <span style="color: #008000; font-weight: bold">&lt;li&gt;</span>Buku<span style="color: #008000; font-weight: bold">&lt;/li&gt;</span>
+    <span style="color: #008000; font-weight: bold">&lt;li&gt;</span>Pensil<span style="color: #008000; font-weight: bold">&lt;/li&gt;</span>
+    <span style="color: #008000; font-weight: bold">&lt;li&gt;</span>Penggaris<span style="color: #008000; font-weight: bold">&lt;/li&gt;</span>
+<span style="color: #008000; font-weight: bold">&lt;/ul&gt;</span>
+</pre>
+</div>
+<!--Akhir Kode Program-->
+    
+                    <p>
+                        Tampilan pada halaman web browser.
+                    </p>
+            
+                    <div class="gambar_materi">
+                        <img class="gambar_materi_size" src="https://github.com/rai-pramana/int_gram/blob/main/ul.png?raw=true" alt="Gambar Halaman Web">
+                    </div>
+
+                    <br>
+
+                <h3><li>Ordered List</li></h3>
+                    <p>
+                        <b><i>Ordered list</i></b> merupakan daftar yang mengutamakan urutan dari setiap itemnya. <i>Tag</i> yang digunakan untuk membuat <i>ordered list</i> adalah <i>tag</i> <code>&lt;ol&gt;</code>, 
+                        serta <i>tag</i> <code>&lt;li&gt;</code> (<i>list</i> item) untuk menyatakan daftar itemnya. 
+                    </p>
+                    <p>
+                        Atribut <code>type</code> digunakan untuk mengganti simbol <i>ordered list</i>, dengan nilai sebagai berikut.
+                        <ul>
+                            <li>
+                                <code>a</code> untuk alfabet (<code>a</code>, <code>b</code>, <code>c</code>, dst.).
+                            </li>
+                            <li>
+                                <code>A</code> untuk alfabet (<code>A</code>, <code>B</code>, <code>C</code>, dst.).
+                            </li>
+                            <li>
+                                <code>1</code> (<i>default</i>) untuk bilangan (<code>1</code>, <code>2</code>, <code>3</code>, dst.).
+                            </li>
+                            <li>
+                                <code>i</code> untuk bilangan romawi (<code>i</code>, <code>ii</code>, <code>iii</code>, dst.).
+                            </li>
+                            <li>
+                                <code>I</code> untuk bilangan romawi kapital (<code>I</code>, <code>II</code>, <code>III</code>, dst.).
+                            </li>
+                        </ul>
+                    </p>
+
+<!--Awal Kode Program-->
+<div class="kode">
+<pre class="kode_pre">
+List Kegiatan:
+    <span style="color: #008000; font-weight: bold">&lt;ol</span> <span style="color: #7D9029">type=</span><span style="color: #BA2121">&quot;I&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+    <span style="color: #008000; font-weight: bold">&lt;li&gt;</span>Coding<span style="color: #008000; font-weight: bold">&lt;/li&gt;</span>
+    <span style="color: #008000; font-weight: bold">&lt;li&gt;</span>Gaming<span style="color: #008000; font-weight: bold">&lt;/li&gt;</span>
+    <span style="color: #008000; font-weight: bold">&lt;li&gt;</span>Sport<span style="color: #008000; font-weight: bold">&lt;/li&gt;</span>
+<span style="color: #008000; font-weight: bold">&lt;/ol&gt;</span>
+</pre>
+</div>
+<!--Akhir Kode Program-->
+    
+                    <p>
+                        Tampilan pada halaman web browser.
+                    </p>
+            
+                    <div class="gambar_materi">
+                        <img class="gambar_materi_size" src="https://github.com/rai-pramana/int_gram/blob/main/ol.png?raw=true" alt="Gambar Halaman Web">
+                    </div>
+
+                    <br>
+
+                <h3><li>Description/Definition List</li></h3>
+                    <p>
+                        <b><i>Description/definition list</i></b> merupakan daftar yang berisi penjelasan dari sesuatu. <i>Tag</i> yang digunakan untuk membuat <i>description list</i> adalah <i>tag</i> <code>&lt;dl&gt;</code>, 
+                        <i>tag</i> <code>&lt;dt&gt;</code> (<i>description term</i>) untuk menyatakan istilah yang akan dijelaskan, 
+                        serta <i>tag</i> <code>&lt;dd&gt;</code> (<i>description description</i>) untuk membuat penjelasan dari kata tersebut.
+                    </p>
+
+<!--Awal Kode Program-->
+<div class="kode">
+<pre class="kode_pre">
+<span style="color: #008000; font-weight: bold">&lt;dl&gt;</span>
+    <span style="color: #008000; font-weight: bold">&lt;dl&gt;</span>Mouse<span style="color: #008000; font-weight: bold">&lt;/dl&gt;</span>
+    <span style="color: #008000; font-weight: bold">&lt;dd&gt;</span>Periferal untuk menggerakkan pointer pada komputer<span style="color: #008000; font-weight: bold">&lt;/dd&gt;</span>
+
+    <span style="color: #008000; font-weight: bold">&lt;dl&gt;</span>Keyboard<span style="color: #008000; font-weight: bold">&lt;/dl&gt;</span>
+    <span style="color: #008000; font-weight: bold">&lt;dd&gt;</span>Periferal untuk menginput karakter pada komputer<span style="color: #008000; font-weight: bold">&lt;/dd&gt;</span>
+<span style="color: #008000; font-weight: bold">&lt;/dl&gt;</span>
+</pre>
+</div>
+<!--Akhir Kode Program-->
+    
+                    <p>
+                        Tampilan pada halaman web browser.
+                    </p>
+            
+                    <div class="gambar_materi">
+                        <img class="gambar_materi_size" src="https://github.com/rai-pramana/int_gram/blob/main/dl.png?raw=true" alt="Gambar Halaman Web">
+                    </div> 
+                    
+                    <br>
+
+            </ol>
+        </p>
+        <h3>Nested List (List Bersarang)</h3>
+        <p>
+            <i>List</i> dapat dibuat di dalam <i>list</i> lainnya.
+        </p>
+
+<!--Awal Kode Program-->
+<div class="kode">
+<pre class="kode_pre">
+List kegiatan:
+<span style="color: #008000; font-weight: bold">&lt;ol</span> <span style="color: #7D9029">type=</span><span style="color: #BA2121">&quot;I&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+    <span style="color: #008000; font-weight: bold">&lt;li&gt;</span>Coding
+        <span style="color: #008000; font-weight: bold">&lt;ul</span> <span style="color: #7D9029">type=</span><span style="color: #BA2121">&quot;circle&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+            <span style="color: #008000; font-weight: bold">&lt;li&gt;</span>HTML<span style="color: #008000; font-weight: bold">&lt;/li&gt;</span>
+            <span style="color: #008000; font-weight: bold">&lt;li&gt;</span>CSS<span style="color: #008000; font-weight: bold">&lt;/li&gt;</span>
+            <span style="color: #008000; font-weight: bold">&lt;li&gt;</span>JS<span style="color: #008000; font-weight: bold">&lt;/li&gt;</span>
+        <span style="color: #008000; font-weight: bold">&lt;/ul&gt;</span>
+    <span style="color: #008000; font-weight: bold">&lt;/li&gt;</span>
+    <span style="color: #008000; font-weight: bold">&lt;li&gt;</span>Gaming<span style="color: #008000; font-weight: bold">&lt;/li&gt;</span>
+        <span style="color: #008000; font-weight: bold">&lt;ol&gt;</span>
+            <span style="color: #008000; font-weight: bold">&lt;li&gt;</span>Genshin Impact<span style="color: #008000; font-weight: bold">&lt;/li&gt;</span>
+            <span style="color: #008000; font-weight: bold">&lt;li&gt;</span>Flow Free<span style="color: #008000; font-weight: bold">&lt;/li&gt;</span>
+        <span style="color: #008000; font-weight: bold">&lt;/ol&gt;</span>
+    <span style="color: #008000; font-weight: bold">&lt;li&gt;</span>Sport<span style="color: #008000; font-weight: bold">&lt;/li&gt;</span>
+<span style="color: #008000; font-weight: bold">&lt;/ol&gt;</span>
+</pre>
+</div>
+<!--Akhir Kode Program-->
+    
+        <p>
+            Tampilan pada halaman web browser.
+        </p>
+
+        <div class="gambar_materi">
+            <img class="gambar_materi_size" src="https://github.com/rai-pramana/int_gram/blob/main/list%20nested.png?raw=true" alt="Gambar Halaman Web">
+        </div>
+        
+        <hr style="margin-top: 50px; margin-bottom:65px">
+
+        <!--Materi Penambahan Gambar-->
+        <h2 id="materi_gambar">Penambahan Gambar</h2>
+               
+        <p>
+            Penambahan gambar pada dokumen HTML menggunakan <i>tag</i> <code>&lt;img&gt;</code> dengan atribut wajib yaitu ‘src’ untuk menyimpan alamat dari gambar, baik itu alamat URL ataupun alamat <i>path file</i>.
+        </p>
+        
+<!--Awal Kode Program-->
+<div class="kode">
+<pre class="kode_pre">
+<span style="color: #008000; font-weight: bold">&lt;img</span> <span style="color: #7D9029">src=</span><span style="color: #BA2121">&quot;https://github.com/rai-pramana/int_gram/blob/main/bb2ca9f84fdc9df48fbd2d924fa3a01b.jpg?raw=true&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+</pre>
+</div>
+<!--Akhir Kode Program-->
+    
+        <p>
+            Tampilan pada halaman web browser.
+        </p>
+
+        <div class="gambar_materi">
+            <img class="gambar_materi_size" src="https://github.com/rai-pramana/int_gram/blob/main/img.png?raw=true" alt="Gambar Halaman Web">
+        </div>
+
+        <br>
+
+        <p>
+            Atribut <code>alt</code> digunakan sebagai alternatif dari gambar jika gambar tersebut tidak dapat ditampilkan pada halaman web.
+        </p>  
+        
+<!--Awal Kode Program-->
+<div class="kode">
+<pre class="kode_pre">
+<span style="color: #008000; font-weight: bold">&lt;img</span> <span style="color: #7D9029">src=</span><span style="color: #BA2121">&quot;&quot;</span> <span style="color: #7D9029">alt=</span><span style="color: #BA2121">&quot;Gambar&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+</pre>
+</div>
+<!--Akhir Kode Program-->
+    
+        <p>
+            Tampilan pada halaman web browser.
+        </p>
+
+        <div class="gambar_materi">
+            <img class="gambar_materi_size" src="https://github.com/rai-pramana/int_gram/blob/main/img%20alt.png?raw=true" alt="Gambar Halaman Web">
+        </div>
+
+        <br>
+
+        <p>
+            Atribut <code>width</code> digunakan untuk mengatur lebar gambar, serta atribut <code>height</code> digunakan untuk mengatur tinggi gambar. Nilai yang dimasukkan yaitu <i>piksel</i> (<code>px</code>) atau persentase (<code>%</code>).
+        </p>   
+        
+<!--Awal Kode Program-->
+<div class="kode">
+<pre class="kode_pre">
+<span style="color: #008000; font-weight: bold">&lt;img</span> <span style="color: #7D9029">src=</span><span style="color: #BA2121">&quot;https://github.com/rai-pramana/int_gram/blob/main/bb2ca9f84fdc9df48fbd2d924fa3a01b.jpg?raw=true&quot;</span> <span style="color: #7D9029">alt=</span><span style="color: #BA2121">&quot;Gambar&quot;</span> <span style="color: #7D9029">width=</span><span style="color: #BA2121">&quot;200px&quot;</span> <span style="color: #7D9029">height=</span><span style="color: #BA2121">&quot;200px&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+</pre>
+</div>
+<!--Akhir Kode Program-->
+    
+        <p>
+            Tampilan pada halaman web browser.
+        </p>
+
+        <div class="gambar_materi">
+            <img class="gambar_materi_size" src="https://github.com/rai-pramana/int_gram/blob/main/img%20w%20h.png?raw=true" alt="Gambar Halaman Web">
+        </div>
+
+        <br>
+
+        <p>
+            Atribut <code>border</code> digunakan untuk membuat bingkai pada gambar. Nilai yang dimasukkan yaitu <i>piksel</i> (<code>px</code>), yang digunakan untuk mengatur ketebalan border.
+        </p>  
+        
+<!--Awal Kode Program-->
+<div class="kode">
+<pre class="kode_pre">
+<span style="color: #008000; font-weight: bold">&lt;img</span> <span style="color: #7D9029">src=</span><span style="color: #BA2121">&quot;https://github.com/rai-pramana/int_gram/blob/main/bb2ca9f84fdc9df48fbd2d924fa3a01b.jpg?raw=true&quot;</span> <span style="color: #7D9029">alt=</span><span style="color: #BA2121">&quot;Gambar&quot;</span> <span style="color: #7D9029">width=</span><span style="color: #BA2121">&quot;200px&quot;</span> <span style="color: #7D9029">height=</span><span style="color: #BA2121">&quot;200px&quot;</span> <span style="color: #7D9029">border=</span><span style="color: #BA2121">&quot;5px&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+</pre>
+</div>
+<!--Akhir Kode Program-->
+    
+        <p>
+            Tampilan pada halaman web browser.
+        </p>
+
+        <div class="gambar_materi">
+            <img class="gambar_materi_size" src="https://github.com/rai-pramana/int_gram/blob/main/img%20border.png?raw=true" alt="Gambar Halaman Web">
+        </div>
+
+        <br>
+
+        <p>
+            Atribut CSS pada gambar yaitu <code>border-radius</code> untuk mengatur sudut pada gambar. Nilai yang dimasukkan yaitu <i>piksel</i> (<code>px</code>) atau persentase (<code>%</code>).
+        </p>        
+         
+<!--Awal Kode Program-->
+<div class="kode">
+<pre class="kode_pre">
+<span style="color: #008000; font-weight: bold">&lt;img</span> <span style="color: #7D9029">src=</span><span style="color: #BA2121">&quot;https://github.com/rai-pramana/int_gram/blob/main/bb2ca9f84fdc9df48fbd2d924fa3a01b.jpg?raw=true&quot;</span> <span style="color: #7D9029">alt=</span><span style="color: #BA2121">&quot;Gambar&quot;</span> <span style="color: #7D9029">width=</span><span style="color: #BA2121">&quot;200px&quot;</span> <span style="color: #7D9029">height=</span><span style="color: #BA2121">&quot;200px&quot;</span> <span style="color: #7D9029">border=</span><span style="color: #BA2121">&quot;5px&quot;</span> <span style="color: #7D9029">style=</span><span style="color: #BA2121">&quot;border-radius: 20%;&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+</pre>
+</div>
+<!--Akhir Kode Program-->
+    
+        <p>
+            Tampilan pada halaman web browser.
+        </p>
+
+        <div class="gambar_materi">
+            <img class="gambar_materi_size" src="https://github.com/rai-pramana/int_gram/blob/main/img%20border%20r.png?raw=true" alt="Gambar Halaman Web">
+        </div>
+
+        <hr style="margin-top: 50px; margin-bottom:65px">
+
+        <!--Materi Penambahan Hyperlink-->
+        <h2 id="materi_link">Penambahan Hyperlink</h2>
+        <p>
+            <b><i>Hyperlink</i></b> atau <b><i>link</i></b> merupakan elemen HTML yang digunakan untuk menghubungkan halaman web yang satu dengan halaman web lainnya, 
+            mengunduh <i>file</i>, menjalankan fungsi Javascript, <i>scroll</i> halaman web, dll.
+        </p>
+        <p>
+            Pembuatan <i>link</i> pada HTML menggunakan <i>tag</i> <code>&lt;a&gt;</code> dengan atribut wajib yaitu <code>href</code> untuk menyimpan alamat tujuan (URL) dari <i>link</i> tersebut.
+        </p>    
+        <p>
+            Pada halaman web, <i>link</i> akan secara <i>default</i> ditandai dengan warna biru dan garis bawah.
+        </p>    
+        <p>
+            Jenis-jenis Link pada HTML yaitu sebagai berikut.
+            <ol>
+                <h3><li>Internal Link</li></h3>
+                    <p>
+                        Internal <i>link</i> merupakan <i>link</i> yang memiliki alamat tujuan yaitu domain atau halaman web itu sendiri.
+                    </p>
+
+<!--Awal Kode Program-->
+<div class="kode">
+<pre class="kode_pre">
+<span style="color: #008000; font-weight: bold">&lt;a</span> <span style="color: #7D9029">href=</span><span style="color: #BA2121">&quot;C:\Users\raipr\Desktop\biodata.html&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>Biodata<span style="color: #008000; font-weight: bold">&lt;/a&gt;</span>
+</pre>
+</div>
+<!--Akhir Kode Program-->
+    
+                    <p>
+                        Tampilan pada halaman web browser.
+                    </p>
+
+                    <div class="gambar_materi">
+                        <img class="gambar_materi_size" src="https://github.com/rai-pramana/int_gram/blob/main/a%20internal.png?raw=true" alt="Gambar Halaman Web">
+                    </div>
+
+                    <br>
+
+                <h3><li>Eksternal Link</li></h3>
+                    <p>
+                        Eksternal <i>link</i> merupakan <i>link</i> yang memiliki alamat tujuan yaitu domain lain.
+                    </p>
+
+<!--Awal Kode Program-->
+<div class="kode">
+<pre class="kode_pre">
+<span style="color: #008000; font-weight: bold">&lt;a</span> <span style="color: #7D9029">href=</span><span style="color: #BA2121">&quot;https://www.youtube.com/&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>Youtube<span style="color: #008000; font-weight: bold">&lt;/a&gt;</span>
+</pre>
+</div>
+<!--Akhir Kode Program-->
+    
+                    <p>
+                        Tampilan pada halaman web browser.
+                    </p>
+
+                    <div class="gambar_materi">
+                        <img class="gambar_materi_size" src="https://github.com/rai-pramana/int_gram/blob/main/a%20eksternal.png?raw=true" alt="Gambar Halaman Web">
+                    </div>
+
+                    <br>
+            </ol>
+        </p>
+        <p>
+            Atribut <code>target</code> digunakan menentukan target pembukaan <i>link</i> tersebut. Nilai yang dimasukkan yaitu sebagai berikut.
+            <ul>
+                <li>
+                    <p>
+                        <code>_blank</code> digunakan untuk membuka <i>link</i> pada jendela/tab baru.
+                    </p>
+
+<!--Awal Kode Program-->
+<div class="kode">
+<pre class="kode_pre">
+<span style="color: #008000; font-weight: bold">&lt;a</span> <span style="color: #7D9029">href=</span><span style="color: #BA2121">&quot;https://www.youtube.com/&quot;</span> <span style="color: #7D9029">target=</span><span style="color: #BA2121">&quot;_blank&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>Youtube<span style="color: #008000; font-weight: bold">&lt;/a&gt;</span>
+</pre>
+</div>
+<!--Akhir Kode Program-->
+    
+                    <p>
+                        Contoh:
+                        <a href="https://www.youtube.com/" target="_blank">Youtube</a>
+                    </p>
+
+                    <br>
+
+                </li>
+                <li>
+                    <p>
+                        <code>_self</code> digunakan untuk membuka <i>link</i> pada halaman itu sendiri (default).
+                    </p>
+
+<!--Awal Kode Program-->
+<div class="kode">
+<pre class="kode_pre">
+<span style="color: #008000; font-weight: bold">&lt;a</span> <span style="color: #7D9029">href=</span><span style="color: #BA2121">&quot;https://www.youtube.com/&quot;</span> <span style="color: #7D9029">target=</span><span style="color: #BA2121">&quot;_self&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>Youtube<span style="color: #008000; font-weight: bold">&lt;/a&gt;</span>
+</pre>
+</div>
+<!--Akhir Kode Program-->
+
+                    <p>
+                        Contoh:
+                        <a href="https://www.youtube.com/" target="_self">Youtube</a>
+                    </p>
+
+                    <br>
+
+                </li>
+                <li>
+                    <p>
+                        <code>_top</code> digunakan untuk menuju bagian paling atas pada halaman web.
+                    </p>
+
+<!--Awal Kode Program-->
+<div class="kode">
+<pre class="kode_pre">
+<span style="color: #008000; font-weight: bold">&lt;a</span> <span style="color: #7D9029">href=</span><span style="color: #BA2121">&quot;#&quot;</span> <span style="color: #7D9029">target=</span><span style="color: #BA2121">&quot;_top&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>Menuju ke Atas<span style="color: #008000; font-weight: bold">&lt;/a&gt;</span>
+</pre>
+</div>
+<!--Akhir Kode Program-->
+    
+                    <p>
+                        Contoh:
+                        <a href="" target="_top">Menuju ke Atas</a>
+                    </p>
+
+                    <br>
+
+                </li>
+                <li>
+                    <p>
+                        <code>nama-frame</code> digunakan untuk membuka <i>link</i> pada <i>tag</i> <code>&lt;iframe&gt;</code> dengan nama tertentu.
+                    </p>
+
+<!--Awal Kode Program-->
+<div class="kode">
+<pre class="kode_pre">
+<span style="color: #008000; font-weight: bold">&lt;a</span> <span style="color: #7D9029">href=</span><span style="color: #BA2121">&quot;C:\Users\raipr\Desktop\biodata.html&quot;</span> <span style="color: #7D9029">target=</span><span style="color: #BA2121">&quot;frameA&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>Link Frame<span style="color: #008000; font-weight: bold">&lt;/a&gt;</span>
+<span style="color: #008000; font-weight: bold">&lt;iframe</span> <span style="color: #7D9029">name=</span><span style="color: #BA2121">&quot;frameA&quot;</span> <span style="color: #7D9029">width=</span><span style="color: #BA2121">&quot;1000px&quot;</span> <span style="color: #7D9029">height=</span><span style="color: #BA2121">&quot;600px&quot;</span><span style="color: #008000; font-weight: bold">&gt;&lt;/iframe&gt;</span>
+</pre>
+</div>
+<!--Akhir Kode Program-->
+    
+                    <p>
+                        Tampilan pada halaman web browser.
+                    </p>
+
+                    <div class="gambar_materi">
+                        <img class="gambar_materi_size" src="https://github.com/rai-pramana/int_gram/blob/main/a%20t%20frame.png?raw=true" alt="Gambar Halaman Web">
+                    </div>
+
+                    <br>
+
+                </li>
+            </ul>
+        </p>  
+        <p>
+            Atribut <code>title</code> digunakan untuk membuat informasi tambahan saat <i>link</i> disentuh <i>pointer</i> (PC) atau menahan tap (<i>Smartphone</i>).
+        </p>
+        
+<!--Awal Kode Program-->
+<div class="kode">
+<pre class="kode_pre">
+<span style="color: #008000; font-weight: bold">&lt;a</span> <span style="color: #7D9029">href=</span><span style="color: #BA2121">&quot;&quot;</span> <span style="color: #7D9029">title=</span><span style="color: #BA2121">&quot;Hover link&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>Link<span style="color: #008000; font-weight: bold">&lt;/a&gt;</span>
+</pre>
+</div>
+<!--Akhir Kode Program-->
+
+        <p>
+            Contoh:
+            <a href="" title="Hover link">Link</a>
+        </p>
+
+        <br>
+
+        <p>
+            <i>Link anchor</i> merupakan <i>link</i> yang digunakan untuk menuju ke suatu elemen pada dokumen HTML. 
+            Pembuatan link anchor pada dokumen HTML menggunakan tanda pagar (<code>#</code>), yang diikuti dengan nama <code>id</code> dari elemen tujuan.
+        </p>
+
+<!--Awal Kode Program-->
+<div class="kode">
+<pre class="kode_pre">
+<span style="color: #008000; font-weight: bold">&lt;a</span> <span style="color: #7D9029">href=</span><span style="color: #BA2121">&quot;#pendahuluan&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>Menuju ke Pendahuluan<span style="color: #008000; font-weight: bold">&lt;/a&gt;</span>
+</pre>
+</div>
+<!--Akhir Kode Program-->
+
+        <p>
+            Contoh:
+            <a href="#pendahuluan">Menuju ke Pendahuluan</a>
+        </p>
+
+        <br>
+
+        <p>
+            Membuat gambar sebagai <i>link</i> pada dokumen HTML menggunakan <i>tag</i> <code>&lt;img&gt;</code> yang dibungkus dengan <i>tag</i> <code>&lt;a&gt;</code>.
+        </p>
+
+<!--Awal Kode Program-->
+<div class="kode">
+<pre class="kode_pre">
+<span style="color: #008000; font-weight: bold">&lt;a</span> <span style="color: #7D9029">href=</span><span style="color: #BA2121">&quot;https://www.youtube.com/&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+    <span style="color: #008000; font-weight: bold">&lt;img</span> <span style="color: #7D9029">src=</span><span style="color: #BA2121">&quot;https://www.youtube.com/img/desktop/yt_1200.png&quot;</span> <span style="color: #7D9029">width=</span><span style="color: #BA2121">&quot;200px&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+<span style="color: #008000; font-weight: bold">&lt;/a&gt;</span>
+</pre>
+</div>
+<!--Akhir Kode Program-->
+
+        <p>
+            Contoh:
+            <br>
+            <a href="https://www.youtube.com/">
+                <img src="https://www.youtube.com/img/desktop/yt_1200.png" width="200px" border="1px">
+            </a>
+        </p>
+
+        <br>
+
+        <p>
+            Membuat <i>link</i> untuk mengunduh <i>file</i> pada dokumen HTML menggunakan <i>tag</i> <code>&lt;a&gt;</code> dengan atribut <code>href</code> untuk menyimpan alamat URL dari <i>file</i> tersebut.
+        </p>
+
+<!--Awal Kode Program-->
+<div class="kode">
+<pre class="kode_pre">
+<span style="color: #008000; font-weight: bold">&lt;a</span> <span style="color: #7D9029">href=</span><span style="color: #BA2121">&quot;https://codeload.github.com/rai-pramana/int_gram/zip/refs/heads/main&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>Unduh File<span style="color: #008000; font-weight: bold">&lt;/a&gt;</span>
+</pre>
+</div>
+<!--Akhir Kode Program-->
+
+        <p>
+            Contoh:
+            <a href="https://codeload.github.com/rai-pramana/int_gram/zip/refs/heads/main">Unduh File</a>
+        </p>
+            
+        <hr style="margin-top: 50px; margin-bottom:65px">
+
+        <!--Materi Pembuatan Tabel-->
+        <h2 id="materi_tabel">Pembuatan Tabel</h2>
+        <p>
+            Pembuatan tabel pada dokumen HTML menggunakan beberapa <i>tag</i>, yaitu sebagai berikut.
+            <ol>
+                <li>
+                    <p>
+                        <i>tag</i> <code>&lt;table&gt;</code> digunakan untuk mendeklarasikan tabel.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <i>tag</i> <code>&lt;thead&gt;</code> digunakan untuk membungkus bagian head pada tabel.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <i>tag</i> <code>&lt;tbody&gt;</code> digunakan untuk membungkus bagian body pada tabel.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <i>tag</i> <code>&lt;tr&gt;</code> (tabel row) digunakan untuk membuat baris pada tabel.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <i>tag</i> <code>&lt;td&gt;</code> (table data) digunakan untuk membuat sel pada tabel.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <i>tag</i> <code>&lt;th&gt;</code> (table head) digunakan untuk membuat judul pada bagian head tabel.
+                    </p>
+                </li>
+            </ol>
+        </p>
+
+<!--Awal Kode Program-->
+<div class="kode">
+<pre class="kode_pre">
+<span style="color: #008000; font-weight: bold">&lt;table&gt;</span>
+    <span style="color: #008000; font-weight: bold">&lt;tr&gt;</span>
+        <span style="color: #008000; font-weight: bold">&lt;th&gt;&lt;/th&gt;</span>
+        <span style="color: #008000; font-weight: bold">&lt;th&gt;</span>Kolom 1<span style="color: #008000; font-weight: bold">&lt;/th&gt;</span>
+        <span style="color: #008000; font-weight: bold">&lt;th&gt;</span>Kolom 2<span style="color: #008000; font-weight: bold">&lt;/th&gt;</span>
+    <span style="color: #008000; font-weight: bold">&lt;/tr&gt;</span>
+    <span style="color: #008000; font-weight: bold">&lt;tr&gt;</span>
+        <span style="color: #008000; font-weight: bold">&lt;th&gt;</span>Baris 1<span style="color: #008000; font-weight: bold">&lt;/th&gt;</span>
+        <span style="color: #008000; font-weight: bold">&lt;td&gt;</span>(1,1)<span style="color: #008000; font-weight: bold">&lt;/td&gt;</span>
+        <span style="color: #008000; font-weight: bold">&lt;td&gt;</span>(1,2)<span style="color: #008000; font-weight: bold">&lt;/td&gt;</span>
+    <span style="color: #008000; font-weight: bold">&lt;/tr&gt;</span>
+    <span style="color: #008000; font-weight: bold">&lt;tr&gt;</span>
+        <span style="color: #008000; font-weight: bold">&lt;th&gt;</span>Baris 2<span style="color: #008000; font-weight: bold">&lt;/th&gt;</span>
+        <span style="color: #008000; font-weight: bold">&lt;td&gt;</span>(2,1)<span style="color: #008000; font-weight: bold">&lt;/td&gt;</span>
+        <span style="color: #008000; font-weight: bold">&lt;td&gt;</span>(2,2)<span style="color: #008000; font-weight: bold">&lt;/td&gt;</span>
+    <span style="color: #008000; font-weight: bold">&lt;/tr&gt;</span>
+<span style="color: #008000; font-weight: bold">&lt;/table&gt;</span>
+</pre>
+</div>
+<!--Akhir Kode Program-->
+
+        <p>
+            Tampilan pada halaman web browser.
+        </p>
+
+        <div class="gambar_materi">
+            <img class="gambar_materi_size" src="https://github.com/rai-pramana/int_gram/blob/main/tb.png?raw=true" alt="Gambar Halaman Web">
+        </div>
+
+        <br>
+
+        <p>
+            Atribut <code>border</code> digunakan untuk mengatur ketebalan garis tabel.
+        </p>
+
+<!--Awal Kode Program-->
+<div class="kode">
+<pre class="kode_pre">
+<span style="color: #008000; font-weight: bold">&lt;table</span> <span style="color: #7D9029">border=</span><span style="color: #BA2121">&quot;1px&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+    <span style="color: #008000; font-weight: bold">&lt;tr&gt;</span>
+        <span style="color: #008000; font-weight: bold">&lt;th&gt;&lt;/th&gt;</span>
+        <span style="color: #008000; font-weight: bold">&lt;th&gt;</span>Kolom 1<span style="color: #008000; font-weight: bold">&lt;/th&gt;</span>
+        <span style="color: #008000; font-weight: bold">&lt;th&gt;</span>Kolom 2<span style="color: #008000; font-weight: bold">&lt;/th&gt;</span>
+    <span style="color: #008000; font-weight: bold">&lt;/tr&gt;</span>
+    <span style="color: #008000; font-weight: bold">&lt;tr&gt;</span>
+        <span style="color: #008000; font-weight: bold">&lt;th&gt;</span>Baris 1<span style="color: #008000; font-weight: bold">&lt;/th&gt;</span>
+        <span style="color: #008000; font-weight: bold">&lt;td&gt;</span>(1,1)<span style="color: #008000; font-weight: bold">&lt;/td&gt;</span>
+        <span style="color: #008000; font-weight: bold">&lt;td&gt;</span>(1,2)<span style="color: #008000; font-weight: bold">&lt;/td&gt;</span>
+    <span style="color: #008000; font-weight: bold">&lt;/tr&gt;</span>
+    <span style="color: #008000; font-weight: bold">&lt;tr&gt;</span>
+        <span style="color: #008000; font-weight: bold">&lt;th&gt;</span>Baris 2<span style="color: #008000; font-weight: bold">&lt;/th&gt;</span>
+        <span style="color: #008000; font-weight: bold">&lt;td&gt;</span>(2,1)<span style="color: #008000; font-weight: bold">&lt;/td&gt;</span>
+        <span style="color: #008000; font-weight: bold">&lt;td&gt;</span>(2,2)<span style="color: #008000; font-weight: bold">&lt;/td&gt;</span>
+    <span style="color: #008000; font-weight: bold">&lt;/tr&gt;</span>
+<span style="color: #008000; font-weight: bold">&lt;/table&gt;</span>
+</pre>
+</div>
+<!--Akhir Kode Program-->
+
+        <p>
+            Tampilan pada halaman web browser.
+        </p>
+
+        <div class="gambar_materi">
+            <img class="gambar_materi_size" src="https://github.com/rai-pramana/int_gram/blob/main/tb%20border.png?raw=true" alt="Gambar Halaman Web">
+        </div>
+
+        <br>
+
+        <p>
+            Atribut <code>cellpadding</code> digunakan untuk mengatur jarak antara teks dengan garis pada sel tabel.
+        </p>
+
+<!--Awal Kode Program-->
+<div class="kode">
+<pre class="kode_pre">
+<span style="color: #008000; font-weight: bold">&lt;table</span> <span style="color: #7D9029">border=</span><span style="color: #BA2121">&quot;1px&quot;</span> <span style="color: #7D9029">cellpadding=</span><span style="color: #BA2121">&quot;10px&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+    <span style="color: #008000; font-weight: bold">&lt;tr&gt;</span>
+        <span style="color: #008000; font-weight: bold">&lt;th&gt;&lt;/th&gt;</span>
+        <span style="color: #008000; font-weight: bold">&lt;th&gt;</span>Kolom 1<span style="color: #008000; font-weight: bold">&lt;/th&gt;</span>
+        <span style="color: #008000; font-weight: bold">&lt;th&gt;</span>Kolom 2<span style="color: #008000; font-weight: bold">&lt;/th&gt;</span>
+    <span style="color: #008000; font-weight: bold">&lt;/tr&gt;</span>
+    <span style="color: #008000; font-weight: bold">&lt;tr&gt;</span>
+        <span style="color: #008000; font-weight: bold">&lt;th&gt;</span>Baris 1<span style="color: #008000; font-weight: bold">&lt;/th&gt;</span>
+        <span style="color: #008000; font-weight: bold">&lt;td&gt;</span>(1,1)<span style="color: #008000; font-weight: bold">&lt;/td&gt;</span>
+        <span style="color: #008000; font-weight: bold">&lt;td&gt;</span>(1,2)<span style="color: #008000; font-weight: bold">&lt;/td&gt;</span>
+    <span style="color: #008000; font-weight: bold">&lt;/tr&gt;</span>
+    <span style="color: #008000; font-weight: bold">&lt;tr&gt;</span>
+        <span style="color: #008000; font-weight: bold">&lt;th&gt;</span>Baris 2<span style="color: #008000; font-weight: bold">&lt;/th&gt;</span>
+        <span style="color: #008000; font-weight: bold">&lt;td&gt;</span>(2,1)<span style="color: #008000; font-weight: bold">&lt;/td&gt;</span>
+        <span style="color: #008000; font-weight: bold">&lt;td&gt;</span>(2,2)<span style="color: #008000; font-weight: bold">&lt;/td&gt;</span>
+    <span style="color: #008000; font-weight: bold">&lt;/tr&gt;</span>
+<span style="color: #008000; font-weight: bold">&lt;/table&gt;</span>
+</pre>
+</div>
+<!--Akhir Kode Program-->
+
+        <p>
+            Tampilan pada halaman web browser.
+        </p>
+
+        <div class="gambar_materi">
+            <img class="gambar_materi_size" src="https://github.com/rai-pramana/int_gram/blob/main/tb%20cellpadding%20.png?raw=true" alt="Gambar Halaman Web">
+        </div>
+
+        <br>
+
+        <p>
+            Atribut <code>cellspacing</code> digunakan untuk mengatur jumlah ruang pada sel tabel.
+        </p> 
+        
+<!--Awal Kode Program-->
+<div class="kode">
+<pre class="kode_pre">
+<span style="color: #008000; font-weight: bold">&lt;table</span> <span style="color: #7D9029">border=</span><span style="color: #BA2121">&quot;1px&quot;</span> <span style="color: #7D9029">cellspacing=</span><span style="color: #BA2121">&quot;10px&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+    <span style="color: #008000; font-weight: bold">&lt;tr&gt;</span>
+        <span style="color: #008000; font-weight: bold">&lt;th&gt;&lt;/th&gt;</span>
+        <span style="color: #008000; font-weight: bold">&lt;th&gt;</span>Kolom 1<span style="color: #008000; font-weight: bold">&lt;/th&gt;</span>
+        <span style="color: #008000; font-weight: bold">&lt;th&gt;</span>Kolom 2<span style="color: #008000; font-weight: bold">&lt;/th&gt;</span>
+    <span style="color: #008000; font-weight: bold">&lt;/tr&gt;</span>
+    <span style="color: #008000; font-weight: bold">&lt;tr&gt;</span>
+        <span style="color: #008000; font-weight: bold">&lt;th&gt;</span>Baris 1<span style="color: #008000; font-weight: bold">&lt;/th&gt;</span>
+        <span style="color: #008000; font-weight: bold">&lt;td&gt;</span>(1,1)<span style="color: #008000; font-weight: bold">&lt;/td&gt;</span>
+        <span style="color: #008000; font-weight: bold">&lt;td&gt;</span>(1,2)<span style="color: #008000; font-weight: bold">&lt;/td&gt;</span>
+    <span style="color: #008000; font-weight: bold">&lt;/tr&gt;</span>
+    <span style="color: #008000; font-weight: bold">&lt;tr&gt;</span>
+        <span style="color: #008000; font-weight: bold">&lt;th&gt;</span>Baris 2<span style="color: #008000; font-weight: bold">&lt;/th&gt;</span>
+        <span style="color: #008000; font-weight: bold">&lt;td&gt;</span>(2,1)<span style="color: #008000; font-weight: bold">&lt;/td&gt;</span>
+        <span style="color: #008000; font-weight: bold">&lt;td&gt;</span>(2,2)<span style="color: #008000; font-weight: bold">&lt;/td&gt;</span>
+    <span style="color: #008000; font-weight: bold">&lt;/tr&gt;</span>
+<span style="color: #008000; font-weight: bold">&lt;/table&gt;</span>
+</pre>
+</div>
+<!--Akhir Kode Program-->
+
+        <p>
+            Tampilan pada halaman web browser.
+        </p>
+
+        <div class="gambar_materi">
+            <img class="gambar_materi_size" src="https://github.com/rai-pramana/int_gram/blob/main/tb%20cellspacing%20.png?raw=true" alt="Gambar Halaman Web">
+        </div>
+
+        <br>
+
+        <p>
+            Atribut <code>bgcolor</code> digunakan untuk menambahkan warna pada sel tabel.
+        </p>   
+        
+<!--Awal Kode Program-->
+<div class="kode">
+<pre class="kode_pre">
+<span style="color: #008000; font-weight: bold">&lt;table</span> <span style="color: #7D9029">border=</span><span style="color: #BA2121">&quot;1px&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+    <span style="color: #008000; font-weight: bold">&lt;tr&gt;</span>
+        <span style="color: #008000; font-weight: bold">&lt;th</span> <span style="color: #7D9029">bgcolor=</span><span style="color: #BA2121">&quot;yellow&quot;</span><span style="color: #008000; font-weight: bold">&gt;&lt;/th&gt;</span>
+        <span style="color: #008000; font-weight: bold">&lt;th</span> <span style="color: #7D9029">bgcolor=</span><span style="color: #BA2121">&quot;yellow&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>Kolom 1<span style="color: #008000; font-weight: bold">&lt;/th&gt;</span>
+        <span style="color: #008000; font-weight: bold">&lt;th</span> <span style="color: #7D9029">bgcolor=</span><span style="color: #BA2121">&quot;yellow&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>Kolom 2<span style="color: #008000; font-weight: bold">&lt;/th&gt;</span>
+    <span style="color: #008000; font-weight: bold">&lt;/tr&gt;</span>
+    <span style="color: #008000; font-weight: bold">&lt;tr&gt;</span>
+        <span style="color: #008000; font-weight: bold">&lt;th</span> <span style="color: #7D9029">bgcolor=</span><span style="color: #BA2121">&quot;yellow&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>Baris 1<span style="color: #008000; font-weight: bold">&lt;/th&gt;</span>
+        <span style="color: #008000; font-weight: bold">&lt;td&gt;</span>(1,1)<span style="color: #008000; font-weight: bold">&lt;/td&gt;</span>
+        <span style="color: #008000; font-weight: bold">&lt;td&gt;</span>(1,2)<span style="color: #008000; font-weight: bold">&lt;/td&gt;</span>
+    <span style="color: #008000; font-weight: bold">&lt;/tr&gt;</span>
+    <span style="color: #008000; font-weight: bold">&lt;tr&gt;</span>
+        <span style="color: #008000; font-weight: bold">&lt;th</span> <span style="color: #7D9029">bgcolor=</span><span style="color: #BA2121">&quot;yellow&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>Baris 2<span style="color: #008000; font-weight: bold">&lt;/th&gt;</span>
+        <span style="color: #008000; font-weight: bold">&lt;td&gt;</span>(2,1)<span style="color: #008000; font-weight: bold">&lt;/td&gt;</span>
+        <span style="color: #008000; font-weight: bold">&lt;td&gt;</span>(2,2)<span style="color: #008000; font-weight: bold">&lt;/td&gt;</span>
+    <span style="color: #008000; font-weight: bold">&lt;/tr&gt;</span>
+<span style="color: #008000; font-weight: bold">&lt;/table&gt;</span>
+</pre>
+</div>
+<!--Akhir Kode Program-->
+
+        <p>
+            Tampilan pada halaman web browser.
+        </p>
+
+        <div class="gambar_materi">
+            <img class="gambar_materi_size" src="https://github.com/rai-pramana/int_gram/blob/main/tb%20bgcolor.png?raw=true" alt="Gambar Halaman Web">
+        </div>
+
+        <br>
+
+        <p>
+            Atribut <code>rowspan</code> digunakan untuk menggabungkan baris pada tabel.
+        </p>    
+
+<!--Awal Kode Program-->
+<div class="kode">
+<pre class="kode_pre">
+<span style="color: #008000; font-weight: bold">&lt;table</span> <span style="color: #7D9029">border=</span><span style="color: #BA2121">&quot;1px&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+    <span style="color: #008000; font-weight: bold">&lt;tr&gt;</span>
+        <span style="color: #008000; font-weight: bold">&lt;th</span> <span style="color: #7D9029">bgcolor=</span><span style="color: #BA2121">&quot;yellow&quot;</span><span style="color: #008000; font-weight: bold">&gt;&lt;/th&gt;</span>
+        <span style="color: #008000; font-weight: bold">&lt;th</span> <span style="color: #7D9029">bgcolor=</span><span style="color: #BA2121">&quot;yellow&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>Kolom<span style="color: #008000; font-weight: bold">&lt;/th&gt;</span>
+    <span style="color: #008000; font-weight: bold">&lt;/tr&gt;</span>
+    <span style="color: #008000; font-weight: bold">&lt;tr&gt;</span>
+        <span style="color: #008000; font-weight: bold">&lt;th</span> <span style="color: #7D9029">rowspan=</span><span style="color: #BA2121">&quot;2&quot;</span> <span style="color: #7D9029">bgcolor=</span><span style="color: #BA2121">&quot;yellow&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>Baris<span style="color: #008000; font-weight: bold">&lt;/th&gt;</span>
+        <span style="color: #008000; font-weight: bold">&lt;td&gt;</span>(1,1)<span style="color: #008000; font-weight: bold">&lt;/td&gt;</span>
+        <span style="color: #008000; font-weight: bold">&lt;td&gt;</span>(1,2)<span style="color: #008000; font-weight: bold">&lt;/td&gt;</span>
+    <span style="color: #008000; font-weight: bold">&lt;/tr&gt;</span>
+    <span style="color: #008000; font-weight: bold">&lt;tr&gt;</span>
+        <span style="color: #008000; font-weight: bold">&lt;td&gt;</span>(2,1)<span style="color: #008000; font-weight: bold">&lt;/td&gt;</span>
+        <span style="color: #008000; font-weight: bold">&lt;td&gt;</span>(2,2)<span style="color: #008000; font-weight: bold">&lt;/td&gt;</span>
+    <span style="color: #008000; font-weight: bold">&lt;/tr&gt;</span>
+<span style="color: #008000; font-weight: bold">&lt;/table&gt;</span>
+</pre>
+</div>
+<!--Akhir Kode Program-->
+
+        <p>
+            Tampilan pada halaman web browser.
+        </p>
+
+        <div class="gambar_materi">
+            <img class="gambar_materi_size" src="https://github.com/rai-pramana/int_gram/blob/main/tb%20rowspan.png?raw=true" alt="Gambar Halaman Web">
+        </div>
+
+        <br>
+        
+        <p>
+            Atribut <code>colspan</code> digunakan untuk menggabungkan kolom pada tabel.
+        </p>    
+
+<!--Awal Kode Program-->
+<div class="kode">
+<pre class="kode_pre">
+<span style="color: #008000; font-weight: bold">&lt;table</span> <span style="color: #7D9029">border=</span><span style="color: #BA2121">&quot;1px&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+    <span style="color: #008000; font-weight: bold">&lt;tr&gt;</span>
+        <span style="color: #008000; font-weight: bold">&lt;th</span> <span style="color: #7D9029">bgcolor=</span><span style="color: #BA2121">&quot;yellow&quot;</span><span style="color: #008000; font-weight: bold">&gt;&lt;/th&gt;</span>
+        <span style="color: #008000; font-weight: bold">&lt;th</span> <span style="color: #7D9029">colspan=</span><span style="color: #BA2121">&quot;2&quot;</span> <span style="color: #7D9029">bgcolor=</span><span style="color: #BA2121">&quot;yellow&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>Kolom<span style="color: #008000; font-weight: bold">&lt;/th&gt;</span>
+    <span style="color: #008000; font-weight: bold">&lt;/tr&gt;</span>
+    <span style="color: #008000; font-weight: bold">&lt;tr&gt;</span>
+        <span style="color: #008000; font-weight: bold">&lt;th</span> <span style="color: #7D9029">rowspan=</span><span style="color: #BA2121">&quot;2&quot;</span> <span style="color: #7D9029">bgcolor=</span><span style="color: #BA2121">&quot;yellow&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>Baris<span style="color: #008000; font-weight: bold">&lt;/th&gt;</span>
+        <span style="color: #008000; font-weight: bold">&lt;td&gt;</span>(1,1)<span style="color: #008000; font-weight: bold">&lt;/td&gt;</span>
+        <span style="color: #008000; font-weight: bold">&lt;td&gt;</span>(1,2)<span style="color: #008000; font-weight: bold">&lt;/td&gt;</span>
+    <span style="color: #008000; font-weight: bold">&lt;/tr&gt;</span>
+    <span style="color: #008000; font-weight: bold">&lt;tr&gt;</span>
+        <span style="color: #008000; font-weight: bold">&lt;td&gt;</span>(2,1)<span style="color: #008000; font-weight: bold">&lt;/td&gt;</span>
+        <span style="color: #008000; font-weight: bold">&lt;td&gt;</span>(2,2)<span style="color: #008000; font-weight: bold">&lt;/td&gt;</span>
+    <span style="color: #008000; font-weight: bold">&lt;/tr&gt;</span>
+<span style="color: #008000; font-weight: bold">&lt;/table&gt;</span>
+</pre>
+</div>
+<!--Akhir Kode Program-->
+
+        <p>
+            Tampilan pada halaman web browser.
+        </p>
+
+        <div class="gambar_materi">
+            <img class="gambar_materi_size" src="https://github.com/rai-pramana/int_gram/blob/main/tb%20colspan.png?raw=true" alt="Gambar Halaman Web">
+        </div>
+        
+        <hr style="margin-top: 50px; margin-bottom:65px">
+
+        <!--Materi Pembuatan Form-->
+        <h2 id="materi_form">Pembuatan Form</h2>
+        <p>
+            Pembuatan form pada dokumen HTML menggunakan <i>tag</i> <code>&lt;form&gt;</code> dengan atribut <code>action</code> untuk menentukan aksi yang dilakukan saat pengiriman data, 
+            serta atribut <code>method</code> untuk menentukan metode pengiriman data.
+        </p>
+        <p>
+            Pembuatan elemen/field dalam form dokumen HTML menggunakan <i>tag</i> <code>&lt;input&gt;</code> dengan atribut <code>type</code> untuk menentukan tipe dari field, 
+            serta atribut <code>name</code> untuk menentukan nama kunci dari field tersebut. 
+            Nilai yang dimasukkan pada atribut <code>type</code> yaitu <code>text</code>, <code>password</code>, <code>email</code>, <code>radio</code>, <code>checkbox</code>, <code>submit</code>, dll.
+        </p>
+        <p>
+            <i>tag</i> <code>&lt;label&gt;</code> digunakan untuk membuat label pada field sehingga membantu pengguna untuk memahami masukkan yang diperlukan pada form. 
+        </p>
+        
+<!--Awal Kode Program-->
+<div class="kode">
+<pre class="kode_pre">
+<span style="color: #008000; font-weight: bold">&lt;form</span> <span style="color: #7D9029">action=</span><span style="color: #BA2121">&quot;form.php&quot;</span> <span style="color: #7D9029">method=</span><span style="color: #BA2121">&quot;get&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+    <span style="color: #408080; font-style: italic">&lt;!--Field Form--&gt;</span>
+    <span style="color: #008000; font-weight: bold">&lt;p&gt;</span>
+        <span style="color: #008000; font-weight: bold">&lt;label&gt;</span>Email:<span style="color: #008000; font-weight: bold">&lt;/label&gt;</span>
+        <span style="color: #008000; font-weight: bold">&lt;input</span> <span style="color: #7D9029">type=</span><span style="color: #BA2121">&quot;email&quot;</span> <span style="color: #7D9029">name=</span><span style="color: #BA2121">&quot;email&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+    <span style="color: #008000; font-weight: bold">&lt;/p&gt;</span>
+    <span style="color: #008000; font-weight: bold">&lt;p&gt;</span>
+        <span style="color: #008000; font-weight: bold">&lt;label&gt;</span>Password:<span style="color: #008000; font-weight: bold">&lt;/label&gt;</span>
+        <span style="color: #008000; font-weight: bold">&lt;input</span> <span style="color: #7D9029">type=</span><span style="color: #BA2121">&quot;password&quot;</span> <span style="color: #7D9029">name=</span><span style="color: #BA2121">&quot;password&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+    <span style="color: #008000; font-weight: bold">&lt;/p&gt;</span>
+    <span style="color: #008000; font-weight: bold">&lt;p&gt;</span>
+        <span style="color: #008000; font-weight: bold">&lt;label&gt;&lt;input</span> <span style="color: #7D9029">type=</span><span style="color: #BA2121">&quot;checkbox&quot;</span> <span style="color: #7D9029">name=</span><span style="color: #BA2121">&quot;remember&quot;</span> <span style="color: #7D9029">value=</span><span style="color: #BA2121">&quot;remember&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span> Remember me<span style="color: #008000; font-weight: bold">&lt;/label&gt;</span>
+    <span style="color: #008000; font-weight: bold">&lt;/p&gt;</span>
+    <span style="color: #008000; font-weight: bold">&lt;p&gt;</span>
+        <span style="color: #008000; font-weight: bold">&lt;input</span> <span style="color: #7D9029">type=</span><span style="color: #BA2121">&quot;submit&quot;</span> <span style="color: #7D9029">name=</span><span style="color: #BA2121">&quot;submit&quot;</span> <span style="color: #7D9029">value=</span><span style="color: #BA2121">&quot;Login&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+    <span style="color: #008000; font-weight: bold">&lt;/p&gt;</span>
+<span style="color: #008000; font-weight: bold">&lt;/form&gt;</span>
+</pre>
+</div>
+<!--Akhir Kode Program-->
+
+        <p>
+            Tampilan pada halaman web browser.
+        </p>
+
+        <div class="gambar_materi">
+            <img class="gambar_materi_size" src="https://github.com/rai-pramana/int_gram/blob/main/form.png?raw=true" alt="Gambar Halaman Web">
+        </div>
+
+        <br>
+
+        <p>
+            <i>tag</i> <code>&lt;textarea&gt;</code> digunakan untuk membuat field yang berjenis uraian panjang dalam form dokumen HTML.
+        </p>
+
+<!--Awal Kode Program-->
+<div class="kode">
+<pre class="kode_pre">
+<span style="color: #008000; font-weight: bold">&lt;p&gt;&lt;label&gt;</span>Alamat:<span style="color: #008000; font-weight: bold">&lt;/label&gt;</span><span style="color: #008000; font-weight: bold">&lt;/p&gt;</span>
+<span style="color: #008000; font-weight: bold">&lt;textarea</span> <span style="color: #7D9029">name=</span><span style="color: #BA2121">&quot;alamat&quot;</span> <span style="color: #7D9029">id=</span><span style="color: #BA2121">&quot;&quot;</span> <span style="color: #7D9029">cols=</span><span style="color: #BA2121">&quot;30&quot;</span> <span style="color: #7D9029">rows=</span><span style="color: #BA2121">&quot;10&quot;</span><span style="color: #008000; font-weight: bold">&gt;&lt;/textarea&gt;</span>
+</pre>
+</div>
+<!--Akhir Kode Program-->
+
+        <p>
+            Tampilan pada halaman web browser.
+        </p>
+
+        <div class="gambar_materi">
+            <img class="gambar_materi_size" src="https://github.com/rai-pramana/int_gram/blob/main/form%20textarea.png?raw=true" alt="Gambar Halaman Web">
+        </div>
+
+        <br>
+
+        <p>
+            <i>tag</i> <code>&lt;select&gt;</code> digunakan untuk membuat field yang berjenis pilihan dalam form dokumen HTML, 
+            serta <i>tag</i> <code>&lt;option&gt;</code> digunakan untuk membuat pilihan-pilihan yang dapat dimasukkan pada field tersebut.
+        </p>
+
+<!--Awal Kode Program-->
+<div class="kode">
+<pre class="kode_pre">
+<span style="color: #008000; font-weight: bold">&lt;p&gt;</span>
+    <span style="color: #008000; font-weight: bold">&lt;label&gt;</span>Hobi:<span style="color: #008000; font-weight: bold">&lt;/label&gt;</span>
+    <span style="color: #008000; font-weight: bold">&lt;select</span> <span style="color: #7D9029">name=</span><span style="color: #BA2121">&quot;hobi&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+        <span style="color: #008000; font-weight: bold">&lt;option</span> <span style="color: #7D9029">value=</span><span style="color: #BA2121">&quot;gaming&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>Gaming<span style="color: #008000; font-weight: bold">&lt;/option&gt;</span>
+        <span style="color: #008000; font-weight: bold">&lt;option</span> <span style="color: #7D9029">value=</span><span style="color: #BA2121">&quot;moovie&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>Movie<span style="color: #008000; font-weight: bold">&lt;/option&gt;</span>
+        <span style="color: #008000; font-weight: bold">&lt;option</span> <span style="color: #7D9029">value=</span><span style="color: #BA2121">&quot;coding&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>Coding<span style="color: #008000; font-weight: bold">&lt;/option&gt;</span>
+    <span style="color: #008000; font-weight: bold">&lt;/select&gt;</span>
+<span style="color: #008000; font-weight: bold">&lt;/p&gt;</span>
+</pre>
+</div>
+<!--Akhir Kode Program-->
+
+        <p>
+            Tampilan pada halaman web browser.
+        </p>
+
+        <div class="gambar_materi">
+            <img class="gambar_materi_size" src="https://github.com/rai-pramana/int_gram/blob/main/form%20select.png?raw=true" alt="Gambar Halaman Web">
+        </div>
+
+        <br>
+
+        <p>
+            Contoh Form:
+        </p>
+
+<!--Awal Kode Program-->
+<div class="kode">
+<pre class="kode_pre">
+<span style="color: #008000; font-weight: bold">&lt;form</span> <span style="color: #7D9029">action=</span><span style="color: #BA2121">&quot;form.php&quot;</span> <span style="color: #7D9029">method=</span><span style="color: #BA2121">&quot;get&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+    <span style="color: #008000; font-weight: bold">&lt;p&gt;</span>
+        <span style="color: #008000; font-weight: bold">&lt;label&gt;</span>Nama:<span style="color: #008000; font-weight: bold">&lt;/label&gt;</span>
+        <span style="color: #008000; font-weight: bold">&lt;input</span> <span style="color: #7D9029">type=</span><span style="color: #BA2121">&quot;text&quot;</span> <span style="color: #7D9029">name=</span><span style="color: #BA2121">&quot;name&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+    <span style="color: #008000; font-weight: bold">&lt;/p&gt;</span>
+    <span style="color: #008000; font-weight: bold">&lt;p&gt;</span>
+        <span style="color: #008000; font-weight: bold">&lt;label&gt;</span>Email:<span style="color: #008000; font-weight: bold">&lt;/label&gt;</span>
+        <span style="color: #008000; font-weight: bold">&lt;input</span> <span style="color: #7D9029">type=</span><span style="color: #BA2121">&quot;email&quot;</span> <span style="color: #7D9029">name=</span><span style="color: #BA2121">&quot;name&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+    <span style="color: #008000; font-weight: bold">&lt;/p&gt;</span>
+    <span style="color: #008000; font-weight: bold">&lt;p&gt;</span>
+        <span style="color: #008000; font-weight: bold">&lt;label&gt;</span>Jenis Kelamin:<span style="color: #008000; font-weight: bold">&lt;/label&gt;</span>
+        <span style="color: #008000; font-weight: bold">&lt;label&gt;&lt;input</span> <span style="color: #7D9029">type=</span><span style="color: #BA2121">&quot;radio&quot;</span> <span style="color: #7D9029">name=</span><span style="color: #BA2121">&quot;jenis_kelamin&quot;</span> <span style="color: #7D9029">value=</span><span style="color: #BA2121">&quot;laki-laki&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span> Laki-laki<span style="color: #008000; font-weight: bold">&lt;/label&gt;</span>
+        <span style="color: #008000; font-weight: bold">&lt;label&gt;&lt;input</span> <span style="color: #7D9029">type=</span><span style="color: #BA2121">&quot;radio&quot;</span> <span style="color: #7D9029">name=</span><span style="color: #BA2121">&quot;jenis_kelamin&quot;</span> <span style="color: #7D9029">value=</span><span style="color: #BA2121">&quot;perempuan&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span> Perempuan<span style="color: #008000; font-weight: bold">&lt;/label&gt;</span>
+    <span style="color: #008000; font-weight: bold">&lt;/p&gt;</span>
+    <span style="color: #008000; font-weight: bold">&lt;p&gt;</span>
+        <span style="color: #008000; font-weight: bold">&lt;label&gt;</span>Hobi:<span style="color: #008000; font-weight: bold">&lt;/label&gt;</span>
+        <span style="color: #008000; font-weight: bold">&lt;select</span> <span style="color: #7D9029">name=</span><span style="color: #BA2121">&quot;hobi&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+            <span style="color: #008000; font-weight: bold">&lt;option</span> <span style="color: #7D9029">value=</span><span style="color: #BA2121">&quot;gaming&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>Gaming<span style="color: #008000; font-weight: bold">&lt;/option&gt;</span>
+            <span style="color: #008000; font-weight: bold">&lt;option</span> <span style="color: #7D9029">value=</span><span style="color: #BA2121">&quot;moovie&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>Movie<span style="color: #008000; font-weight: bold">&lt;/option&gt;</span>
+            <span style="color: #008000; font-weight: bold">&lt;option</span> <span style="color: #7D9029">value=</span><span style="color: #BA2121">&quot;coding&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>Coding<span style="color: #008000; font-weight: bold">&lt;/option&gt;</span>
+        <span style="color: #008000; font-weight: bold">&lt;/select&gt;</span>
+    <span style="color: #008000; font-weight: bold">&lt;/p&gt;</span>
+    <span style="color: #008000; font-weight: bold">&lt;p&gt;</span>
+        <span style="color: #008000; font-weight: bold">&lt;label&gt;</span>Alamat:<span style="color: #008000; font-weight: bold">&lt;/label&gt;</span>
+        <span style="color: #008000; font-weight: bold">&lt;textarea</span> <span style="color: #7D9029">name=</span><span style="color: #BA2121">&quot;alamat&quot;</span><span style="color: #008000; font-weight: bold">&gt;&lt;/textarea&gt;</span>
+    <span style="color: #008000; font-weight: bold">&lt;/p&gt;</span>
+    <span style="color: #008000; font-weight: bold">&lt;p&gt;</span>
+        <span style="color: #008000; font-weight: bold">&lt;input</span> <span style="color: #7D9029">type=</span><span style="color: #BA2121">&quot;submit&quot;</span> <span style="color: #7D9029">name=</span><span style="color: #BA2121">&quot;submit&quot;</span> <span style="color: #7D9029">value=</span><span style="color: #BA2121">&quot;Kirim&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+    <span style="color: #008000; font-weight: bold">&lt;/p&gt;</span>
+<span style="color: #008000; font-weight: bold">&lt;/form&gt;</span>
+</pre>
+</div>
+<!--Akhir Kode Program-->
+
+        <p>
+            Tampilan pada halaman web browser.
+        </p>
+
+        <div class="gambar_materi">
+            <img class="gambar_materi_size" src="https://github.com/rai-pramana/int_gram/blob/main/form%20complete.png?raw=true" alt="Gambar Halaman Web">
+        </div>
+
+        <br>
+
+        <hr style="margin-top: 50px; margin-bottom:65px">
+
+        <!--Daftar Pustaka-->
+        <h2 id="daftar_pustaka">Daftar Pustaka</h2>
+        <ul>
+            <li>
+                <p>HTML Tutorial. Diambil kembali dari W3Schools: <a href="https://www.w3schools.com/html/" target="_blank">"https://www.w3schools.com/html/</a>, diakses tanggal 18 September 2022.</p>
+            </li>
+            <li>
+                <p>Muhardian, A. (2020, Juni 22). Belajar HTML #02: Apa itu Tag, Elemen, dan Atribut dalam HTML? Diambil kembali dari Petani Kode: <a href="https://www.petanikode.com/html-tag-elemen-atribut/" target="_blank">"https://www.petanikode.com/html-tag-elemen-atribut/</a>, diakses tanggal 18 September 2022.</p>
+            </li>
+            <li>
+                <p>Muhardian, A. (2020, Juni 25). Belajar HTML #03: Membuat Paragraf pada HTML. Diambil kembali dari Petani Kode: <a href="https://www.petanikode.com/html-paragraf/" target="_blank">"https://www.petanikode.com/html-paragraf/</a>, diakses tanggal 18 September 2022.</p>
+            </li>
+            <li>
+                <p>Muhardian, A. (2020, Juni 26). Belajar HTML #04: Cara Membuat Heading di HTML. Diambil kembali dari Petani Kode: <a href="https://www.petanikode.com/html-heading/" target="_blank">"https://www.petanikode.com/html-heading/</a>, diakses tanggal 18 September 2022.</p>
+            </li>
+            <li>
+                <p>Muhardian, A. (2020, Juni 30). Belajar HTML #05: Cara Membuat Komentar di HTML. Diambil kembali dari Petani Kode: <a href="https://www.petanikode.com/html-komentar/" target="_blank">"https://www.petanikode.com/html-komentar/</a>, diakses tanggal 18 September 2022.</p>
+            </li>
+            <li>
+                <p>Muhardian, A. (2020, Juli 9). Belajar HTML #06: Text Formatting di HTML (Bold, Italic, Underline, dll). Diambil kembali dari Petani Kode: <a href="https://www.petanikode.com/html-text-formatting/" target="_blank">"https://www.petanikode.com/html-text-formatting/</a>, diakses tanggal 18 September 2022.</p>
+            </li>
+            <li>
+                <p>Muhardian, A. (2020, Juni 28). Belajar HTML #07: Cara Membuat Link untuk Menghubungkan Halaman Web. Diambil kembali dari Petani Kode: <a href="https://www.petanikode.com/html-link/" target="_blank">"https://www.petanikode.com/html-link/</a>, diakses tanggal 18 September 2022.</p>
+            </li>
+            <li>
+                <p>Muhardian, A. (2020, Juli 12). Belajar HTML #08: Cara Menampilkan Gambar di HTML. Diambil kembali dari Petani Kode: <a href="https://www.petanikode.com/html-img/" target="_blank">"https://www.petanikode.com/html-img/</a>, diakses tanggal 18 September 2022.</p>
+            </li>
+            <li>
+                <p>Muhardian, A. (2015, Februari 12). Belajar HTML #09: Cara Membuat List di HTML. Diambil kembali dari Petani Kode: <a href="https://www.petanikode.com/html-list/" target="_blank">"https://www.petanikode.com/html-list/</a>, diakses tanggal 18 September 2022.</p>
+            </li>
+            <li>
+                <p>Muhardian, A. (2015, Februari 12). Belajar HTML #10: Cara Membuat Tabel di HTML. Diambil kembali dari Petani Kode: <a href="https://www.petanikode.com/html-tabel/" target="_blank">"https://www.petanikode.com/html-tabel/</a>, diakses tanggal 18 September 2022.</p>
+            </li>
+            <li>
+                <p>Muhardian, A. (2018, September 17). Belajar HTML #11: Cara Membuat Form pada HTML. Diambil kembali dari Petani Kode: <a href="https://www.petanikode.com/html-form/" target="_blank">"https://www.petanikode.com/html-form/</a>, diakses tanggal 18 September 2022.</p>
+            </li>
+        </ul> 
+    </article>
+    
+    <footer>
+        <p>
+            Copyright &copy; 2022 I Kadek Rai Pramana (2105551094)
+            <br>Pemrograman Internet E
+            <br>Teknologi Informasi Fakultas Teknik Universitas Udayana
+        </p>
+    </footer>
+</body>
+</html>
